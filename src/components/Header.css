@@ -1,0 +1,198 @@
+/* Header.css - plain CSS for the header component */
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* left & right, center element handles text centering */
+  padding: 12px 20px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(16, 24, 40, 0.06);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 82px; /* consistent header height */
+  box-sizing: border-box;
+}
+
+/* Left: logo container */
+.header-left {
+  display: flex;
+  align-items: center;
+  min-width: 56px; /* gives left side minimum width */
+}
+
+/* Logo sizing: controlled and responsive */
+.header-logo {
+  max-height: 75px;
+  width: auto;
+  display: block; 
+  object-fit: contain;
+}
+
+.app-header .dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  min-width: 180px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+  padding: 6px;
+  z-index: 60;
+  max-height: 240px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.app-header .dropdown-menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.app-header .dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;                /* space between icon/text */
+  padding: 8px 12px;
+  color: #111827;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: background-color .12s ease, color .12s ease;
+  white-space: nowrap;
+}
+
+.app-header .dropdown-menu a:hover,
+.app-header .dropdown-menu a:focus {
+  background-color: #f3f4f6;
+  color: #0f172a;
+  outline: none;
+}
+
+.app-header .dropdown-menu a:active {
+  background-color: #e5e7eb;
+}
+
+.app-header .dropdown-menu a .icon,
+.app-header .dropdown-menu a svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  display: inline-block;
+  stroke-width: 2;
+}
+
+.app-header .dropdown-menu .group-title {
+  display: block;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* .app-header a.btn{
+  text-decoration: none;
+  padding: 0 0;
+} */
+
+
+
+
+
+/* Center: takes remaining space, centers text */
+.header-center {
+  flex: 1 1 auto;
+  text-align: center;
+  padding: 0 12px;
+  box-sizing: border-box;
+  pointer-events: none; /* allow clicks to pass to left/right if overlapping on small screens */
+}
+
+.header-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1;
+  pointer-events: auto;
+}
+
+/* Right: buttons */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 140px;
+  justify-content: flex-end;
+}
+
+/* Button base */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  padding: 8px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.15s, transform 0.08s;
+  color: #374151;
+}
+
+/* Ghost (icon-style) button */
+.btn-ghost:hover {
+  background: rgba(15, 23, 42, 0.04);
+}
+
+/* Primary button */
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+  padding: 8px 12px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+}
+
+/* Icon styling */
+.icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  color: currentColor;
+  flex-shrink: 0;
+}
+
+/* Hide button text on very small screens to save space */
+.btn-text {
+  display: inline-block;
+}
+
+@media (max-width: 520px) {
+  .header-title {
+    font-size: 16px;
+  }
+  .header-logo {
+    max-height: 60px;
+  }
+  .btn-text {
+    display: none; /* only show icons on very small screens */
+  }
+  .app-header {
+    width: auto;
+    padding: 10px 12px;
+    height: 65px;
+  }
+}
+
+
+
+/* If title must always be perfectly centered regardless of left/right width:
+   The current layout centers the title visually because center has flex:1 and text-align:center.
+   That is sufficient in most cases. If you later add variable-width items and need pixel-perfect centering,
+   we can change to absolute centering. */

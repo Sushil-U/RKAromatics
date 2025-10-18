@@ -1,0 +1,80 @@
+/* Mission container flush to top */
+.mission-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+/* Left segment */
+.mission-left {
+  max-width: 72%;
+  font-family: 'Poppins', serif;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 1s ease-out;
+  background-color: #3b3a3a; /* very light blue */
+  color: #ffffff; /* black text */
+  padding: 40px 20px;
+  box-sizing: border-box;
+  font-size: 2.2rem;
+}
+
+/* Right segment */
+.mission-right {
+  max-width:28%;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 1s ease-out;
+  background-color: #000000; /* white */
+  color: #ffffff; /* dark blue text */
+  padding: 40px 20px;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+/* Slide-in animations */
+.slide-in-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Responsive: stack vertically on mobile */
+@media (max-width: 768px) {
+  /* Stack left and right segments vertically */
+  .mission-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Both segments take full width on mobile */
+  .mission-left{
+    max-width: 60%;
+    transform: translateX(0); /* no horizontal offset on mobile */
+    text-align: center;
+    padding: 20px;
+  }
+  .mission-right {
+    max-width: 40%;
+    transform: translateX(0); /* no horizontal offset on mobile */
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Font size adjustments */
+  .mission-left {
+    font-size: 1.8rem;
+  }
+
+  .mission-right {
+    font-size: 1.3rem;
+
+  }
+}
