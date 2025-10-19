@@ -23,7 +23,7 @@
 
 /* Logo sizing: controlled and responsive */
 .header-logo {
-  max-height: 75px;
+  max-height: 65px;
   width: auto;
   display: block; 
   object-fit: contain;
@@ -57,7 +57,7 @@
   padding: 8px 12px;
   color: #111827;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 6px;
   transition: background-color .12s ease, color .12s ease;
   white-space: nowrap;
@@ -175,18 +175,18 @@
 
 @media (max-width: 520px) {
   .header-title {
-    font-size: 16px;
+    font-size: 20px;
   }
   .header-logo {
-    max-height: 60px;
+    max-height: 50px;
   }
   .btn-text {
     display: none; /* only show icons on very small screens */
   }
   .app-header {
-    width: auto;
-    padding: 10px 12px;
-    height: 65px;
+    width: 100%;
+    padding: 5px 5px;
+    height: 77px;
   }
 }
 

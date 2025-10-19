@@ -55,12 +55,11 @@
   }
 
   /* Both segments take full width on mobile */
-  .mission-left{
+  /* .mission-left{
     max-width: 60%;
-    transform: translateX(0); /* no horizontal offset on mobile */
-    text-align: center;
+    transform: translateX(0); 
     padding: 20px;
-  }
+  } */
   .mission-right {
     max-width: 40%;
     transform: translateX(0); /* no horizontal offset on mobile */
@@ -70,11 +69,25 @@
 
   /* Font size adjustments */
   .mission-left {
-    font-size: 1.8rem;
+    max-width: 60%;
+    font-size: 1rem;
+      transform: translateX(-100px);
+    transition: all 0.8s ease-out;
   }
+  .slide-in-left{
+  opacity: 1;
+  font-size: 1.5rem;
+  transform: translateX(0);
+}
 
   .mission-right {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    background-color: #10babd;
 
   }
+  .slide-in-right{
+  opacity: 1;
+  font-size: 1.2rem;
+  background-color: #000000;
+}
 }
