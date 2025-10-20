@@ -38,7 +38,7 @@ const LoginIcon = ({ className = "" }) => (
   </svg>
 );
 
-const Header = ({ logo = "/logo.png", title = "R.K. Aromatics" }) => {
+const Header = ({ logo = "/logo.png", title = "Rozerscents" }) => {
   const [productsOpen, setProductsOpen] = useState(false);
   const productsRef = useRef(null);
 

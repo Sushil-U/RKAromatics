@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.homepage-container {
+  min-height: 100vh;
+  padding-bottom: 0; /* no safe area padding */
+  box-sizing: border-box;
+}
