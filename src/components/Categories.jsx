@@ -6,7 +6,7 @@ const categories = [
   { name: "Diffuser & Dispenser", image: "/images/cat2.jpg" },
   { name: "Hygiene Items", image: "/images/cat3.jpg" },
   { name: "Perfumes", image: "/images/cat4.jpg" },
-  { name: "Kabad items", image: "/images/cat5.jpg" },
+  { name: "Acessories and tissue", image: "/images/cat5.jpg" },
 ];
 
 const Categories = () => {

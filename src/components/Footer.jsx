@@ -6,6 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-left">
         <h2>Rozerscents</h2>
+        <textbold>(Powered by R.K.Aromatics)</textbold>
         <p>
           Bringing you the finest fragrances and lifestyle products to make
           every moment luxurious.

@@ -2,6 +2,10 @@ import React from "react";
 import { useState, useRef, useEffect } from "react";
 import "./Header.css";
 
+import { Link } from "react-router-dom";
+
+<Link to="/about" className="nav-link">About</Link>
+
 const ProductsIcon = ({ className = "" }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
     <path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
