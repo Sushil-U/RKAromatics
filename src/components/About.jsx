@@ -27,7 +27,7 @@ const About = () => {
         <h1>About Us</h1>
         <h2>Redefining Hygiene, Luxury, and Comfort Across India</h2>
         <p>
-          Welcome to <strong>Rozerscents</strong>, Powered by (R.K.Aromatics),az India’s leading provider of
+          Welcome to <strong>Rozerscents</strong>, Powered by (R.K.Aromatics), India’s leading provider of
           premium hygiene services and equipment for corporates, airports,
           hospitals, banquets, and commercial spaces. We are committed to
           creating cleaner, safer, and more luxurious environments — because
