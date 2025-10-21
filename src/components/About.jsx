@@ -28,7 +28,7 @@ const About = () => {
         <h2>Redefining Hygiene, Luxury, and Comfort Across India</h2>
         <p>
           Welcome to <strong>Rozerscents</strong>, Powered by (R.K.Aromatics), India’s leading provider of
-          premium hygiene services and equipment for corporates, airports,
+          premium hygiene services and equipment for corporates, airports, 
           hospitals, banquets, and commercial spaces. We are committed to
           creating cleaner, safer, and more luxurious environments — because
           hygiene is not just a necessity, it’s a lifestyle.

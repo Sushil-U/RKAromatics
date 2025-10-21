@@ -8,6 +8,7 @@ import Clients from "./components/Clients";
 import Categories from "./components/Categories";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -31,6 +32,10 @@ function App() {
 
         {/* About Page */}
         <Route path="/about" element={<About />} />
+
+        {/* Contact us page */}
+        <Route path="/contact" element={<Contact />} />
+
       </Routes>
       <Footer />
     </Router>
