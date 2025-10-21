@@ -35,13 +35,13 @@ const Contact = () => {
         <div className="contact-info">
           <h2>Get in Touch</h2>
           <p>
-            <strong>Phone 1:</strong> +91 895 787 5050 (for sales and support)
+            <strong>Phone 1:</strong> <a href="tel:+91 895-787-5050" class="contact-link">+91  895-787-5050</a> (for general query)
           </p>
           <p>
-            <strong>Phone 2:</strong> +91 993 407 0523 (for complaints)
+            <strong>Phone 2:</strong> <a href="tel:+91 993-407-0523" class="contact-link">+91  993-407-0523</a> (for complaints)
           </p>
           <p>
-            <strong>Phone 3:</strong> +91 639 315 0513 (for general query)
+            <strong>Phone 3:</strong> <a href="tel:+91 639-315-0513" class="contact-link">+91  639-315-0513 </a> (for sales and appointments)
           </p>
           <p>
             <strong>Email:</strong> info@rozerscents.com

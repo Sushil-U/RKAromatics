@@ -11,7 +11,7 @@
 /* Left segment */
 .mission-left {
   max-width: 72%;
-  font-family: 'Poppins', serif;
+  font-family: "Grenze Gotisch", serif;
   opacity: 0;
   transform: translateX(-100px);
   transition: all 1s ease-out;
@@ -25,6 +25,7 @@
 /* Right segment */
 .mission-right {
   max-width:28%;
+    font-family: "Playpen Sans", cursive;
   opacity: 0;
   transform: translateX(100px);
   transition: all 1s ease-out;
@@ -38,6 +39,7 @@
 /* Slide-in animations */
 .slide-in-left {
   opacity: 1;
+  font-size: 3.5rem;
   transform: translateX(0);
 }
 
@@ -70,13 +72,15 @@
   /* Font size adjustments */
   .mission-left {
     max-width: 60%;
-    font-size: 1rem;
+    font-size: 2.3rem;
       transform: translateX(-100px);
     transition: all 0.8s ease-out;
   }
   .slide-in-left{
   opacity: 1;
-  font-size: 1.5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 2.3rem;
   transform: translateX(0);
 }
 

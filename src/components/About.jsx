@@ -50,7 +50,7 @@ const About = () => {
         <div className="service">
           <h3>1. Complete Hygiene Management</h3>
           <p>
-            We offer professional hygiene maintenance for corporate offices,
+            We offer professional hygiene service for corporate offices,
             airports, banquets, hospitals, showrooms, and educational
             institutions. Our teams ensure spotless cleanliness, regular
             sanitisation, and fragrance-rich environments that leave a lasting
@@ -97,9 +97,9 @@ const About = () => {
         </div>
 
         <div className="service">
-          <h3>4. Dranoscopy & Restroom Safety Treatments</h3>
+          <h3>4. Drainoscopy & Restroom Safety Treatments</h3>
           <p>
-            We provide dranoscopy and deep restroom cleaning services designed
+            We provide drainoscopy and deep restroom cleaning services designed
             to eliminate uric acid deposits, foul odour, and bacterial
             infections, reducing risks of UTI and viral spread. Our specialised
             disinfectants and tools ensure every restroom remains fresh,

@@ -29,7 +29,7 @@ const Mission = () => {
         Our mission is to make every breathing experience feel luxurious and memorable.
       </div>
       <div className={`mission-right ${isVisible ? "slide-in-right" : ""}`}>
-        We carefully curate products that combine elegance, quality, and style, so you feel exceptional with every purchase.
+        We carefully curate products that combine elegance, quality, and style, so you feel exceptional with every service.
       </div>
     </section>
   );
