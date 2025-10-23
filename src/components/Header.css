@@ -31,15 +31,15 @@
 
 .app-header .dropdown-menu {
   position: absolute;
-  left: 0;
-  top: calc(100% + 8px);
+  right: -90px;
+  top: calc(100% + 4px);
   min-width: 180px;
   background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
   padding: 6px;
   z-index: 60;
-  max-height: 240px;
+  max-height: 2840px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -47,18 +47,20 @@
 .app-header .dropdown-menu li {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 6px;  
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .app-header .dropdown-menu a {
   display: flex;
   align-items: center;
   gap: 8px;                /* space between icon/text */
-  padding: 8px 12px;
+  padding: 10px 12px;
   color: #111827;
   text-decoration: none;
   font-size: 16px;
-  border-radius: 6px;
+  font-weight: 550;
+  border-radius: 20px;
   transition: background-color .12s ease, color .12s ease;
   white-space: nowrap;
 }
@@ -161,17 +163,65 @@
 
 /* Icon styling */
 .icon {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   display: inline-block;
   color: currentColor;
   flex-shrink: 0;
+  align-self: center;
 }
 
 /* Hide button text on very small screens to save space */
 .btn-text {
   display: inline-block;
 }
+
+.menu-toggle {
+  cursor: pointer;
+  font-size: 1rem; 
+  border: none;
+  background: none;
+  z-index: 110;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 77px; /* adjust to your header height */
+  left: -100%;
+  width: 62%;
+  height: calc(100vh - 77px);
+  background-color: rgb(244, 244, 244);
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  transition: left 0.4s ease;
+}
+
+.menu-overlay.open {
+  left: 0;
+}
+
+.menu-overlay ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.menu-overlay li {
+  font-family: "Grenze Gotisch", cursive;
+  margin: 20px 0;
+}
+
+.menu-overlay a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #054860;
+}
+
+.menu-overlay a:hover {
+  color: #000;
+}
+
 
 @media (max-width: 520px) {
   .header-title {
@@ -185,10 +235,27 @@
   }
   .app-header {
     width: 100%;
-    padding: 5px 5px;
+    padding: 7px 7px;
     height: 77px;
   }
+ 
+
 }
+
+@media (max-width: 400px) {
+
+  .header-logo {
+    max-height: 40px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .header-logo {
+    max-height: 32px;
+  }
+}
+
 
 
 
