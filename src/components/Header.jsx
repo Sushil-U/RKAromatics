@@ -30,20 +30,20 @@ const ProductsIcon = ({ className = "" }) => (
 </svg>
 );
 
-// const AboutIcon = ({ className = "" }) => (
-//   <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-//     <circle cx="12" cy="8" r="1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-//     <path d="M12 11v4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-//     <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-//   </svg>
-// );
+const AboutIcon = ({ className = "" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+    <circle cx="12" cy="8" r="1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M12 11v4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
 
-// const ContactIcon = ({ className = "" }) => (
-//   <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-//     <path d="M21 8V7a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4v-1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-//     <path d="M8 11h8M8 15h5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-//   </svg>
-// );
+const ContactIcon = ({ className = "" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+    <path d="M21 8V7a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4v-1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M8 11h8M8 15h5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
 
 const SearchIcon = ({ className = "" }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden>
@@ -198,19 +198,19 @@ const Header = ({ logo = "/logo.png", title = "Rozerscents" }) => {
           )}
         </div>
 
-        {/* <a href="/about" className="skip-link" role="button" aria-label="About">
+        <a href="/about" className="no-mobile" role="button" aria-label="About">
           <button className="btn btn-ghost" aria-label="About">
           <AboutIcon className="icon" />
           <span className="btn-text">About</span>
           </button>
-        </a> */}
+        </a>
 
-        {/* <a href="/contact" className="skip-link" role="button" aria-label="About">
+        <a href="/contact" className="no-mobile" role="button" aria-label="About">
         <button className="btn btn-ghost" aria-label="Contact">
           <ContactIcon className="icon" />
           <span className="btn-text">Contact</span>
         </button> 
-        </a> */}
+        </a>
 
         <button className="btn btn-ghost" aria-label="Search">
           <SearchIcon className="icon" />

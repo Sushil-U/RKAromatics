@@ -231,6 +231,10 @@
 
 
 @media (max-width: 520px) {
+  .app-header .header-right .no-mobile {
+    display: none;
+
+  }
   .header-title {
     font-size: 20px;
   }
