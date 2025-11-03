@@ -1,0 +1,24 @@
+.product-slideshow {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  scroll-snap-type: x mandatory;
+  position: relative;
+}
+
+.product-slide {
+  flex: 0 0 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+  transition: transform 1.0s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .product-slideshow {
+    height: 180px;
+  }
+}

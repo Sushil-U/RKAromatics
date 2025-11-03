@@ -1,0 +1,37 @@
+[
+ {
+    "id": 1,
+    "name": "Automatic Elcetric Scent Diffuser (Black)",
+    "description": "The Automatic Electric Scent Diffuser delivers a consistent and long-lasting fragrance using advanced atomization technology. Designed for homes, offices, hotels, and commercial spaces, it ensures uniform scent distribution with adjustable intensity settings.",
+    "image1": "/images/product-id/10001/1.jpg",
+    "image2": "/images/product-id/10001/2.jpg",
+    "price": "₹4,299",
+    "category": "Diffuser"
+  },
+   {
+    "id": 2,
+    "name": "Automatic Elcetric Scent Diffuser (White)",
+    "description": "The Automatic Electric Scent Diffuser delivers a consistent and long-lasting fragrance using advanced atomization technology. Designed for homes, offices, hotels, and commercial spaces, it ensures uniform scent distribution with adjustable intensity settings.",
+    "image1": "/images/product-id/10002/1.jpg",
+    "image2": "/images/product-id/10002/2.jpg",
+    "price": "₹4,299",
+    "category": "Diffuser"
+  },
+  
+  {
+    "id": 3,
+    "name": "Perfume Refill Can",
+    "description": "Compatible with all major spray machines.",
+    "image": "/images/product-id/10001.jpg",
+    "price": "₹299",
+    "category": "Rozer Oil, Refill"
+  },
+  {
+    "id": 4,
+    "name": "Perfume Refill Can",
+    "description": "Compatible with all major spray machines.",
+    "image": "/images/product-id/10001.jpg",
+    "price": "₹299",
+    "category": "Natural Oil, Refill"
+  }
+]
