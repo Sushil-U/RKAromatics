@@ -1,37 +1,110 @@
 [
  {
     "id": 1,
-    "name": "Automatic Elcetric Scent Diffuser (Black)",
+    "name": "Automatic Diffuser FB-2609 (Black)",
     "description": "The Automatic Electric Scent Diffuser delivers a consistent and long-lasting fragrance using advanced atomization technology. Designed for homes, offices, hotels, and commercial spaces, it ensures uniform scent distribution with adjustable intensity settings.",
     "image1": "/images/product-id/10001/1.jpg",
     "image2": "/images/product-id/10001/2.jpg",
+    "image3": "/images/product-id/10001/3.jpg",
+    "image4": "/images/product-id/10001/4.jpg",
+    "image5": "/images/product-id/10001/5.jpg",
+    "image6": "/images/product-id/10001/6.jpg",
+    "image7": "/images/product-id/10001/7.jpg",
+    "image8": "/images/product-id/10001/8.jpg",
+
+
     "price": "₹4,299",
-    "category": "Diffuser"
+    "category": "Fragrance Diffuser"
   },
    {
     "id": 2,
-    "name": "Automatic Elcetric Scent Diffuser (White)",
+    "name": "Automatic Diffuser FW-2609 (White)",
     "description": "The Automatic Electric Scent Diffuser delivers a consistent and long-lasting fragrance using advanced atomization technology. Designed for homes, offices, hotels, and commercial spaces, it ensures uniform scent distribution with adjustable intensity settings.",
     "image1": "/images/product-id/10002/1.jpg",
     "image2": "/images/product-id/10002/2.jpg",
+    "image3": "/images/product-id/10002/3.jpg",
     "price": "₹4,299",
-    "category": "Diffuser"
+    "category": "Fragrance Diffuser"
   },
   
   {
     "id": 3,
-    "name": "Perfume Refill Can",
+    "name": "Automatic Tower Diffuser FB-2311 (Black)",
     "description": "Compatible with all major spray machines.",
-    "image": "/images/product-id/10001.jpg",
-    "price": "₹299",
-    "category": "Rozer Oil, Refill"
+    "image1": "/images/product-id/10003/1.jpg",
+    "image2": "/images/product-id/10003/2.jpg",
+    "image3": "/images/product-id/10003/3.jpg",
+    "image4": "/images/product-id/10003/4.jpg", 
+    "price": "₹16,999",
+    "category": "Fragrance Diffuser"
   },
   {
     "id": 4,
+    "name": "Smart Fragrance Diffuser BW-2712",
+    "description": "Compatible with all major spray machines.",
+    "image1": "/images/product-id/10004/1.jpg",
+    "image2": "/images/product-id/10004/2.jpg",
+    "price": "₹6,299",
+    "category": "Fragrance Diffuser"
+  },
+  {
+    "id": 5,
     "name": "Perfume Refill Can",
     "description": "Compatible with all major spray machines.",
     "image": "/images/product-id/10001.jpg",
     "price": "₹299",
-    "category": "Natural Oil, Refill"
+    "category": "Rozer Oil"
+  },
+
+
+
+
+
+  {
+    "id": 51,
+    "name": "Urinal Screen",
+    "description": "Compatible with all major spray machines.",
+    "image1": "/images/product-id/10051/1.jpg",
+    "image2": "/images/product-id/10051/2.jpg",
+    "image3": "/images/product-id/10051/3.jpg",
+    "image4": "/images/product-id/10051/4.jpg",    
+    "price": "₹89",
+    "category": "Hygiene"
+  },
+  {
+    "id": 52,
+    "name": "Tissue Paper Dispenser",
+    "description": "Compatible with all major spray machines.",
+    "image1": "/images/product-id/10052/1.jpg",
+    "image2": "/images/product-id/10052/2.jpg", 
+    "price": "₹549",
+    "category": ["Hygiene", "Dispenser"]
+  },
+  {
+    "id": 53,
+    "name": "Tissue Paper Dispenser",
+    "description": "Compatible with all major spray machines.",
+    "image1": "/images/product-id/10052/1.jpg",
+    "image2": "/images/product-id/10052/2.jpg", 
+    "price": "₹549",
+    "category": ["Hygiene", "Dispenser"]
+  },
+  {
+    "id": 54,
+    "name": "Tissue Paper Dispenser",
+    "description": "Compatible with all major spray machines.",
+    "image1": "/images/product-id/10052/1.jpg",
+    "image2": "/images/product-id/10052/2.jpg", 
+    "price": "₹549",
+    "category": ["Hygiene", "Dispenser"]
+  },
+  {
+    "id": 55,
+    "name": "Tissue Paper Dispenser",
+    "description": "Compatible with all major spray machines.",
+    "image1": "/images/product-id/10052/1.jpg",
+    "image2": "/images/product-id/10052/2.jpg", 
+    "price": "₹549",
+    "category": ["Hygiene", "Dispenser"]
   }
 ]

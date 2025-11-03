@@ -180,44 +180,15 @@ const Header = ({ logo = "/logo.png", title = "Rozerscents" }) => {
           
         </ul>
       </div>
-        {/* Products dropdown */}
-        <div ref={productsRef} style={{ position: "relative" }}>
-          <button
-            className="btn btn-ghost"
-            aria-haspopup="menu"
-            aria-expanded={productsOpen}
-            onClick={() => setProductsOpen((v) => !v)}
-          >
-            <ProductsIcon className="icon" />
-            <span className="btn-text">Products</span>
-          </button>
+       
 
-          {productsOpen && (
-            <ul
-              role="menu"
-              className="dropdown-menu"
-            >
-              <li role="none">
-                <a role="menuitem" href="#">Fragrance Oil</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Automatic Diffuser and Dispenser</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Manual Diffuser and Dispenser</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Hygiene Products</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Perfumes</a>
-              </li>
-              <li role="none">
-                <a role="menuitem" href="#">Accessories</a>
-              </li>
-            </ul>
-          )}
-        </div>
+        <a href="/products" className="btn btn-ghost" role="button" aria-label="About">
+          
+          <ProductsIcon className="icon" />
+          <span className="btn-text">Products</span>
+          
+        </a>
+
 
         <a href="/about" className="no-mobile" role="button" aria-label="About">
           <button className="btn btn-ghost" aria-label="About">

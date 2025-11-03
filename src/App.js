@@ -29,6 +29,7 @@ function App() {
               <TopProducts />
               <Categories />
               <Mission />
+              <Products />
               <Clients />
               
             </>

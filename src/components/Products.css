@@ -2,6 +2,20 @@
   text-align: center;
   padding: 40px 20px;
 }
+/* ✅ Product title styling */
+.product-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #222;
+  margin: 10px 0 6px;
+  height: 40px; /* Fix height to keep cards aligned */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* show only 2 lines */
+  -webkit-box-orient: vertical;
+  line-height: 1.2;
+}
 
 .products-title {
   margin-top: 60px;
@@ -48,19 +62,7 @@
   margin-top: 20px;
 }
 
-/* ✅ 2 products per row for mobile and smaller screens */
-@media (max-width: 1024px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-/* optional: tighter gap for small screens */
-@media (max-width: 600px) {
-  .product-grid {
-    gap: 15px;
-  }
-}
 
 .product-card {
   border: 1px solid #ddd;
@@ -139,4 +141,86 @@
 .see-more-btn:hover {
   color: #0056b3;
 }
+
+/* ✅ Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.page-btn {
+  background: #f0f0f0;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.1s ease, color 0.3s ease;
+}
+
+.page-btn:hover {
+  background: #007bff;
+  color: white;
+}
+
+.page-btn.active {
+  background: #007bff;
+  color: white;
+}
+
+.page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+/* ✅ 2 products per row for mobile and smaller screens */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* optional: tighter gap for small screens */
+@media (max-width: 600px) {
+  .product-grid {
+    gap: 15px;
+  }
+}
+
+/* ✨ Fade-to-white and fade-in animations for pagination */
+.product-grid.fade-to-white {
+  animation: fadeToWhite 0.4s forwards ease-in;
+}
+
+.product-grid.fade-in {
+  animation: fadeFromWhite 0.4s forwards ease-out;
+}
+
+@keyframes fadeToWhite {
+  0% {
+    opacity: 1;
+    background-color: transparent;
+  }
+  100% {
+    opacity: 0;
+    background-color: #fff;
+  }
+}
+
+@keyframes fadeFromWhite {
+  0% {
+    opacity: 0;
+    background-color: #fff;
+  }
+  100% {
+    opacity: 1;
+    background-color: transparent;
+  }
+}
+
 
