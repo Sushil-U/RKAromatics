@@ -83,6 +83,14 @@
     "price": "₹299",
     "category": "Rozer Oil"
   },
+  {
+    "id": 9,
+    "name": "Car and Cabin Diffuser RK-0909",
+    "description": "Luxurious car and cabin diffuser with elegant design.",
+    "image1": "/images/product-id/10009/1.jpg",
+    "price": "₹4299",
+    "category": "Fragrance Diffuser"
+  },
 
 
 
@@ -138,7 +146,7 @@
     "name": "Liquid Soap Dispenser (White)",
     "description": "Liquid soap dispenser made of high-quality plastic.",
     "image1": "/images/product-id/10056/1.jpg",
-    "price": "₹399",
+    "price": "₹449",
     "category": ["Hygiene", "Dispenser"]
   },
   {

@@ -88,7 +88,7 @@
   display: block;
   margin-top: 10px;
   font-weight: bold;
-  color: #078f81;
+  color: #06645a;
 }
 
 .product-category {
@@ -129,7 +129,7 @@
 .see-more-btn {
   background: none;
   border: none;
-  color: #007bff;
+  color: #0a7a7a;
   cursor: pointer;
   font-weight: bold;
   font-size: 0.9rem;
@@ -163,12 +163,12 @@
 }
 
 .page-btn:hover {
-  background: #007bff;
+  background: #056a86;
   color: white;
 }
 
 .page-btn.active {
-  background: #007bff;
+  background: #0b868f;
   color: white;
 }
 
