@@ -125,7 +125,7 @@ const handlePageChange = (page) => {
 
   return (
     <div className="products-page">
-      <h1 className="products-title">Our Products</h1>
+      <p className="gradient-title">Our Products</p>
 
       {/* ✅ Category Filter Buttons */}
       <div className="filter-bar">

@@ -39,7 +39,7 @@ const TopProducts = () => {
 
   return (
     <section className="top-products-section">
-      <h2 className="top-products-title">Top Products</h2>
+      <h2 className="gradient-title">Top Products</h2>
       <div className="products-grid">
         {products.map((product) => (
           <div

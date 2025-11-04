@@ -21,7 +21,7 @@ const Categories = () => {
 
   return (
     <div className="categories-container">
-      <h2>Browse By Category</h2>
+      <h2 className="gradient-title">Browse By Category</h2>
       <div className="categories-wrapper">
         {categories.map((cat, index) => (
           <div

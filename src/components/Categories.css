@@ -1,17 +1,11 @@
 .categories-container {
+  
+  font-family: "Poppins", sans-serif;
   padding: 40px 0;
   background-color: #f9f9f9;
   position: relative;
 }
 
-.categories-container h2 {
-  font-family: 'Cormorant Garamond';
-  text-decoration: underline;
-  margin-bottom: 20px;
-  font-size: 2rem;
-  text-align: center;
-  color: #222;
-}
 
 /* Universal horizontal scroll layout */
 .categories-wrapper {
@@ -53,7 +47,7 @@
 
 .category-card p {
   margin-top: 10px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
 }
 
@@ -76,4 +70,36 @@
   }
 
   
+}
+
+.gradient-title {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background: linear-gradient(to right, #087584 0%, white 80%);
+  /* #007bff = start color, white fades at 70% */
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-title h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Cormorant Garamond', serif;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Fade text color slightly into dark tone */
+@media (max-width: 768px) {
+  .gradient-title {
+    padding: 25px 0;
+    background: linear-gradient(to right, #087584 0%, white 90%);
+  }
+
+  .gradient-title h2 {
+    font-size: 1.6rem;
+  }
 }

@@ -33,7 +33,7 @@ const Clients = () => {
 
   return (
     <section className="clients-section">
-      <h2 className="clients-title">Our Clients</h2>
+      <h2 className="gradient-title">Our Clients</h2>
       <p
         ref={textRef}
         className={`clients-text ${isVisible ? "slide-in" : ""}`}

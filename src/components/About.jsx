@@ -24,8 +24,8 @@ const About = () => {
   return (
     <div className="about-page">
       <section className="about-intro about-section">
-        <h1>About Us</h1>
-        <h2>Redefining Hygiene, Luxury, and Comfort Across India</h2>
+        <p className="gradient-title">About Us</p>
+        <h3>Redefining Hygiene, Luxury, and Comfort Across India</h3>
         <p>
           Welcome to <strong>Rozerscents</strong>, Powered by (R.K.Aromatics), India’s leading provider of
           premium hygiene services and equipment for corporates, airports, 

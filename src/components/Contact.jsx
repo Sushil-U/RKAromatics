@@ -51,7 +51,7 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <section className="contact-header contact-section">
-        <h1>Contact Us</h1>
+        <h2 className="gradient-title">Contact Us</h2>
         <p>
           We’d love to hear from you! Whether you have a question about our
           products, services, or rental plans — our team is here to help.

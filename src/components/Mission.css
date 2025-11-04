@@ -4,7 +4,7 @@
   justify-content: space-between;
   width: 100%;
   margin: 0;
-  padding-top: 40px;
+  padding-top: 0px;
   overflow: hidden;
 }
 
@@ -15,7 +15,7 @@
   opacity: 0;
   transform: translateX(-100px);
   transition: all 1s ease-out;
-  background-color: #3b3a3a; /* very light blue */
+  background-color: #066f78; /* very light blue */
   color: #ffffff; /* black text */
   padding: 40px 20px;
   box-sizing: border-box;
@@ -92,6 +92,6 @@
   .slide-in-right{
   opacity: 1;
   font-size: 1.2rem;
-  background-color: #000000;
+  background-color: #0652577f;
 }
 }
