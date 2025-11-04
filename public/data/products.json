@@ -38,6 +38,30 @@
   },
   {
     "id": 5,
+    "name": "Sanitary Pad Dispenser",
+    "description": "Sanitary pad dispenser made of high-quality plastic with a sleek design.",
+    "image1": "/images/product-id/10005/1.jpg",
+    "price": "₹599",
+    "category": ["Dispenser"]
+  },
+  {
+    "id": 6,
+    "name": "Automatic Hand Dryer",
+    "description": "Sensor based Automatic Hand Dryer made of stainless steel with a powerful motor for quick drying.",
+    "image1": "/images/product-id/10006/1.jpg",
+    "price": "₹1299",
+    "category": ["Hygiene", "Others"]
+  },
+  {
+    "id": 7,
+    "name": "Hair Dryer Machine",
+    "description": "Wall-mounted Hair Dryer Machine made of high-quality plastic with a powerful motor for quick drying.",
+    "image": "/images/product-id/10007/1.jpg",
+    "price": "₹1,199",
+    "category": ["Hygiene", "Others"]
+  },
+  {
+    "id": 8,
     "name": "Perfume Refill Can",
     "description": "Compatible with all major spray machines.",
     "image": "/images/product-id/10001.jpg",
@@ -91,5 +115,38 @@
     "image1": "/images/product-id/10055/1.jpg",
     "price": "₹199",
     "category": ["Hygiene", "Dispenser"]
+  },
+  {
+    "id": 56,
+    "name": "Liquid Soap Dispenser (White)",
+    "description": "Liquid soap dispenser made of high-quality plastic.",
+    "image1": "/images/product-id/10056/1.jpg",
+    "price": "₹399",
+    "category": ["Hygiene", "Dispenser"]
+  },
+  {
+    "id": 57,
+    "name": "Toilet Paper Holder",
+    "description": "Premium quality toilet paper holder made of stainless steel with a sleek design.",
+    "image1": "/images/product-id/10057/1.jpg",
+    "price": "₹1200",
+    "category": ["Hygiene", "Others"]
+  },
+  {
+    "id": 58,
+    "name": "50-Piece Tissue Paper",
+    "description": "Tissue paper made from soft and absorbent material, perfect for everyday use.",
+    "image1": "/images/product-id/10058/1.jpg",
+    "price": "₹59",
+    "category": ["Hygiene", "Others"]
+  },
+  {
+    "id": 59,
+    "name": "Toilet Paper",
+    "description": "Toilet Paper for daily use, made from soft and absorbent material.",
+    "image1": "/images/product-id/10059/1.jpg",
+    "price": "₹299",
+    "category": ["Hygiene", "Others"]
   }
+
 ]
