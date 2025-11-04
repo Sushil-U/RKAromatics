@@ -4,13 +4,6 @@
     "name": "Automatic Diffuser FB-2609 (Black)",
     "description": "The Automatic Electric Scent Diffuser delivers a consistent and long-lasting fragrance using advanced atomization technology. Designed for homes, offices, hotels, and commercial spaces, it ensures uniform scent distribution with adjustable intensity settings.",
     "image1": "/images/product-id/10001/1.jpg",
-    "image2": "/images/product-id/10001/2.jpg",
-    "image3": "/images/product-id/10001/3.jpg",
-    "image4": "/images/product-id/10001/4.jpg",
-    "image5": "/images/product-id/10001/5.jpg",
-    "image6": "/images/product-id/10001/6.jpg",
-    "image7": "/images/product-id/10001/7.jpg",
-    "image8": "/images/product-id/10001/8.jpg",
 
 
     "price": "₹4,299",
@@ -21,8 +14,7 @@
     "name": "Automatic Diffuser FW-2609 (White)",
     "description": "The Automatic Electric Scent Diffuser delivers a consistent and long-lasting fragrance using advanced atomization technology. Designed for homes, offices, hotels, and commercial spaces, it ensures uniform scent distribution with adjustable intensity settings.",
     "image1": "/images/product-id/10002/1.jpg",
-    "image2": "/images/product-id/10002/2.jpg",
-    "image3": "/images/product-id/10002/3.jpg",
+
     "price": "₹4,299",
     "category": "Fragrance Diffuser"
   },
@@ -32,9 +24,7 @@
     "name": "Automatic Tower Diffuser FB-2311 (Black)",
     "description": "Compatible with all major spray machines.",
     "image1": "/images/product-id/10003/1.jpg",
-    "image2": "/images/product-id/10003/2.jpg",
-    "image3": "/images/product-id/10003/3.jpg",
-    "image4": "/images/product-id/10003/4.jpg", 
+
     "price": "₹16,999",
     "category": "Fragrance Diffuser"
   },
@@ -43,7 +33,6 @@
     "name": "Smart Fragrance Diffuser BW-2712",
     "description": "Compatible with all major spray machines.",
     "image1": "/images/product-id/10004/1.jpg",
-    "image2": "/images/product-id/10004/2.jpg",
     "price": "₹6,299",
     "category": "Fragrance Diffuser"
   },
@@ -76,35 +65,31 @@
     "name": "Tissue Paper Dispenser",
     "description": "Compatible with all major spray machines.",
     "image1": "/images/product-id/10052/1.jpg",
-    "image2": "/images/product-id/10052/2.jpg", 
     "price": "₹549",
     "category": ["Hygiene", "Dispenser"]
   },
   {
     "id": 53,
-    "name": "Tissue Paper Dispenser",
-    "description": "Compatible with all major spray machines.",
-    "image1": "/images/product-id/10052/1.jpg",
-    "image2": "/images/product-id/10052/2.jpg", 
-    "price": "₹549",
+    "name": "Golden Soap Dispenser",
+    "description": "Liquid soap dispenser made of high-quality plastic with a golden finish.",
+    "image2": "/images/product-id/10053/2.jpg", 
+    "price": "₹249",
     "category": ["Hygiene", "Dispenser"]
   },
   {
     "id": 54,
-    "name": "Tissue Paper Dispenser",
-    "description": "Compatible with all major spray machines.",
-    "image1": "/images/product-id/10052/1.jpg",
-    "image2": "/images/product-id/10052/2.jpg", 
-    "price": "₹549",
+    "name": "Soap Dispenser (Black)",
+    "description": "Liquid soap dispenser made of high-quality plastic.",
+    "image1": "/images/product-id/10054/1.jpg",
+    "price": "₹199",
     "category": ["Hygiene", "Dispenser"]
   },
   {
     "id": 55,
-    "name": "Tissue Paper Dispenser",
-    "description": "Compatible with all major spray machines.",
-    "image1": "/images/product-id/10052/1.jpg",
-    "image2": "/images/product-id/10052/2.jpg", 
-    "price": "₹549",
+    "name": "Soap Dispenser (Silver)",
+    "description": "Liquid soap dispenser made of high-quality plastic.",
+    "image1": "/images/product-id/10055/1.jpg",
+    "price": "₹199",
     "category": ["Hygiene", "Dispenser"]
   }
 ]

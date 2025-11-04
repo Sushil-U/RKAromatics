@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Products from "./components/Products";
-
+import Message from "./components/Message";
 
 
 function App() {
@@ -44,6 +44,9 @@ function App() {
 
         {/* Products page */}
         <Route path="/products" element={<Products />} />
+
+        {/* Message page */}
+        <Route path="/message" element={<Message />} />
 
       </Routes> 
       <Footer />
