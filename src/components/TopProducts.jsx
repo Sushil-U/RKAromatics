@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import "./TopProducts.css";
 
 const TopProducts = () => {
@@ -8,25 +10,25 @@ const TopProducts = () => {
     {
       id: 1,
       name: "Royal Perfume",
-      price: "Rs.1199",
+      price: "₹1199",
       image: "/images/product1.jpg",
     },
     {
-      id: 2,
+      id: 2, 
       name: "Blossom Scent",
-      price: "Rs.999",
+      price: "₹999",
       image: "/images/product2.jpg",
     },
     {
       id: 3,
       name: "GYPSY Essential",
-      price: "Rs.899",
+      price: "₹899",
       image: "/images/product3.jpg",
     },
     {
       id: 4,
       name: "Drip Nation",
-      price: "Rs. 1379",
+      price: "₹1379",
       image: "/images/product4.jpg",
     },
   ];
@@ -53,7 +55,7 @@ const TopProducts = () => {
             <h3 className="product-name">{product.name}</h3>
 
             {activeProduct === product.id ? (
-              <button className="buy-now-btn">Buy Now</button>
+              <button className="buy-now-btn"><Link to={`/products/${product.id}`} className="view-details">View Details</Link></button>
             ) : (
               <p className="product-price">{product.price}</p>
             )}

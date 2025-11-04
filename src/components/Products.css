@@ -45,12 +45,12 @@
 }
 
 .filter-btn:hover {
-  background: #007bff;
+  background: #05e0d1;
   color: white;
 }
 
 .filter-btn.active {
-  background: #007bff;
+  background: #048093;
   color: white;
 }
 
@@ -88,7 +88,7 @@
   display: block;
   margin-top: 10px;
   font-weight: bold;
-  color: #007bff;
+  color: #078f81;
 }
 
 .product-category {

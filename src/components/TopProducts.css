@@ -55,12 +55,15 @@
 .product-price {
   font-size: 1rem;
   font-weight: 600;
-  color: #2563eb;
+  color: #095c5a;
 }
-
+.view-details {
+  text-decoration: none;
+  color: white;
+}
 /* ✅ Buy Now Button */
 .buy-now-btn {
-  background-color: #2563eb;
+  background-color: #057a85;
   color: white;
   border: none;
   padding: 10px 16px;
@@ -68,6 +71,7 @@
   font-size: 0.95rem;
   cursor: pointer;
   transition: background 0.25s ease;
+
 }
 
 .buy-now-btn:hover {
@@ -91,6 +95,8 @@
 
   .product-price {
     font-size: 0.9rem;
+
+    font-weight: 800;
   }
 
   .buy-now-btn {
