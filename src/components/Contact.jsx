@@ -83,7 +83,10 @@ const Contact = () => {
             (for sales and appointments)
           </p>
           <p>
-            <strong>Email:</strong> info@rozerscents.com
+            <strong>Email:  </strong>
+            <a href="mailto:info@rozerscents.com?" target="_blank">
+               info@rozerscents.com
+            </a>
           </p>
           <p>
             <strong>Head Office:</strong> Rozerscents Hygiene Pvt. Ltd. <br />
