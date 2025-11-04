@@ -55,7 +55,7 @@
     "id": 5,
     "name": "Sanitary Pad Vending Machine",
     "description": "Sensor based Sanitary pad dispenser made of high-quality plastic with a sleek design.",
-    "image1": "/images/product-id/10005/0.jpg",
+    "image1": "/images/product-id/10005/1.jpg",
     "price": "₹9,999",
     "category": ["Dispenser"]
   },
@@ -103,7 +103,7 @@
     "image1": "/images/product-id/10051/1.jpg",
     "image2": "/images/product-id/10051/2.jpg",
     "image3": "/images/product-id/10051/3.jpg",
-    "image4": "/images/product-id/10051/4.jpg",    
+    "image4": "/images/product-id/10051/4.jpg", 
     "price": "₹89",
     "category": "Hygiene"
   },

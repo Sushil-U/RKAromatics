@@ -1,27 +1,38 @@
 import React, { useState, useEffect } from "react";
 import "./Products.css";
 import ProductSlideshow from "./ProductSlideshow";
-import { Link } from "react-router-dom";
-
+import { Link, useLocation } from "react-router-dom"; // ✅ Added useLocation
 
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8; // ✅ Show 8 per page
+  const itemsPerPage = 8;
+  const location = useLocation(); // ✅ Access URL query params
 
   useEffect(() => {
     fetch("/data/products.json")
       .then((response) => {
-        if (!response.ok) {
-          throw new Error("Failed to fetch product data");
-        }
+        if (!response.ok) throw new Error("Failed to fetch product data");
         return response.json();
       })
       .then((data) => setProducts(data))
       .catch((error) => console.error("Error loading products:", error));
   }, []);
 
+  // ✅ Parse URL ?category= query
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const categoryParam = params.get("category");
+    if (categoryParam) {
+      setSelectedCategory(categoryParam);
+    } else {
+      setSelectedCategory("All");
+    }
+    setCurrentPage(1); // Reset to page 1 on category change via URL
+  }, [location.search]);
+
+  // ✅ Handle category arrays and comma-separated strings
   const getCategories = (cat) => {
     if (Array.isArray(cat)) return cat;
     if (typeof cat === "string") {
@@ -50,37 +61,73 @@ const Products = () => {
     startIndex + itemsPerPage
   );
 
-  const handlePageChange = (page) => {
+  // helper: robust scroll to top of products section after re-render
+// ✅ Universal scroll to Products section (works desktop + mobile)
+const scrollToProductsTop = () => {
+  // Wait for render to settle
+  setTimeout(() => {
+    const section = document.querySelector(".products-page");
+    if (!section) return;
+
+    // Detect if header is fixed/sticky
+    const header =
+      document.querySelector("header") ||
+      document.querySelector(".site-header") ||
+      document.querySelector(".main-header");
+
+    let headerHeight = 0;
+    if (header) {
+      const style = window.getComputedStyle(header);
+      const isFixed =
+        style.position === "fixed" || style.position === "sticky";
+      if (isFixed) {
+        headerHeight = header.offsetHeight;
+      }
+    }
+
+    // Calculate final Y position (top of section minus header height)
+    const y =
+      window.scrollY +
+      section.getBoundingClientRect().top -
+      (headerHeight + 20); // small gap for spacing
+
+    // ✅ Use instant small-step scroll correction (desktop-safe)
+    requestAnimationFrame(() => {
+      window.scrollTo({
+        top: Math.max(0, y),
+        behavior: "smooth",
+      });
+    });
+  }, 150); // wait a bit for layout to fully update (React render + CSS)
+};
+
+
+
+const handlePageChange = (page) => {
   if (page >= 1 && page <= totalPages) {
     const grid = document.querySelector(".product-grid");
     if (grid) grid.classList.add("fade-to-white");
 
     setTimeout(() => {
       setCurrentPage(page);
+
       if (grid) {
         grid.classList.remove("fade-to-white");
         grid.classList.add("fade-in");
       }
 
-      // Scroll to the product grid top (with header offset)
-      setTimeout(() => {
-        const grid = document.querySelector(".product-grid");
-        if (grid) {
-          const yOffset = -80; // adjust header height
-          const y = grid.getBoundingClientRect().top + window.pageYOffset + yOffset;
-          window.scrollTo({ top: y, behavior: "smooth" });
-        }
-      }, 200);
-    }, 300); // match fade timing
+      // ✅ Scroll to top of section after new products render
+      setTimeout(scrollToProductsTop, 300);
+    }, 300);
   }
 };
-
 
 
   return (
     <div className="products-page">
       <h1 className="products-title">Our Products</h1>
 
+      {/* ✅ Category Filter Buttons */}
       <div className="filter-bar">
         {categories.map((cat) => (
           <button
@@ -88,7 +135,13 @@ const Products = () => {
             className={`filter-btn ${selectedCategory === cat ? "active" : ""}`}
             onClick={() => {
               setSelectedCategory(cat);
-              setCurrentPage(1); // reset to page 1 when category changes
+              setCurrentPage(1);
+              // ✅ Update URL query to match selection
+              const newUrl =
+                cat === "All"
+                  ? "/products"
+                  : `/products?category=${encodeURIComponent(cat)}`;
+              window.history.pushState({}, "", newUrl);
             }}
           >
             {cat}
@@ -96,6 +149,7 @@ const Products = () => {
         ))}
       </div>
 
+      {/* ✅ Product Grid */}
       <div className="product-grid">
         {currentProducts.length > 0 ? (
           currentProducts.map((product) => {
@@ -105,19 +159,20 @@ const Products = () => {
               .filter(Boolean);
 
             return (
-              <Link to={`/products/${product.id}`} className="details-link">
-              <div key={product.id} className="product-card">
-                {images.length > 0 && <ProductSlideshow images={images} />}
-                <h3>{product.name}</h3>
-                <p className="product-category">
-                  {getCategories(product.category).join(", ")}
-                </p>
-                <p className="product-description">{product.description}</p>
-                <span className="price">{product.price}</span>
-                
-                  
-                
-              </div>
+              <Link
+                to={`/products/${product.id}`}
+                className="details-link"
+                key={product.id}
+              >
+                <div className="product-card">
+                  {images.length > 0 && <ProductSlideshow images={images} />}
+                  <h3>{product.name}</h3>
+                  <p className="product-category">
+                    {getCategories(product.category).join(", ")}
+                  </p>
+                  <p className="product-description">{product.description}</p>
+                  <span className="price">{product.price}</span>
+                </div>
               </Link>
             );
           })
