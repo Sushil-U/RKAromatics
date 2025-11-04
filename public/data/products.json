@@ -4,6 +4,13 @@
     "name": "Automatic Diffuser FB-2609 (Black)",
     "description": "The Automatic Electric Scent Diffuser delivers a consistent and long-lasting fragrance using advanced atomization technology. Designed for homes, offices, hotels, and commercial spaces, it ensures uniform scent distribution with adjustable intensity settings.",
     "image1": "/images/product-id/10001/1.jpg",
+    "image2": "/images/product-id/10001/2.jpg",
+    "image3": "/images/product-id/10001/3.jpg",
+    "image4": "/images/product-id/10001/4.jpg",
+    "image5": "/images/product-id/10001/5.jpg",
+    "image6": "/images/product-id/10001/6.jpg",
+    "image7": "/images/product-id/10001/7.jpg",
+    "image8": "/images/product-id/10001/8.jpg",
 
 
     "price": "₹4,299",
@@ -56,7 +63,7 @@
     "id": 7,
     "name": "Hair Dryer Machine",
     "description": "Wall-mounted Hair Dryer Machine made of high-quality plastic with a powerful motor for quick drying.",
-    "image": "/images/product-id/10007/1.jpg",
+    "image1": "/images/product-id/10007/1.jpg",
     "price": "₹1,199",
     "category": ["Hygiene", "Others"]
   },
@@ -64,7 +71,7 @@
     "id": 8,
     "name": "Perfume Refill Can",
     "description": "Compatible with all major spray machines.",
-    "image": "/images/product-id/10001.jpg",
+    "image1": "/images/product-id/10001.jpg",
     "price": "₹299",
     "category": "Rozer Oil"
   },
@@ -96,7 +103,7 @@
     "id": 53,
     "name": "Golden Soap Dispenser",
     "description": "Liquid soap dispenser made of high-quality plastic with a golden finish.",
-    "image2": "/images/product-id/10053/2.jpg", 
+    "image1": "/images/product-id/10053/1.jpg", 
     "price": "₹249",
     "category": ["Hygiene", "Dispenser"]
   },

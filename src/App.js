@@ -11,6 +11,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Products from "./components/Products";
 import Message from "./components/Message";
+import ProductDetails from "./components/ProductDetails"; 
 
 
 function App() {
@@ -36,17 +37,15 @@ function App() {
           }
         />
 
-        {/* About Page */}
         <Route path="/about" element={<About />} />
 
-        {/* Contact us page */}
         <Route path="/contact" element={<Contact />} />
 
-        {/* Products page */}
         <Route path="/products" element={<Products />} />
 
-        {/* Message page */}
         <Route path="/message" element={<Message />} />
+
+        <Route path="/products/:id" element={<ProductDetails />} />
 
       </Routes> 
       <Footer />

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Products.css";
 import ProductSlideshow from "./ProductSlideshow";
+import { Link } from "react-router-dom";
+
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -98,11 +100,12 @@ const Products = () => {
         {currentProducts.length > 0 ? (
           currentProducts.map((product) => {
             const images = Object.keys(product)
-              .filter((key) => key.startsWith("image"))
+              .filter((key) => key.startsWith("image1"))
               .map((key) => product[key])
               .filter(Boolean);
 
             return (
+              <Link to={`/products/${product.id}`} className="details-link">
               <div key={product.id} className="product-card">
                 {images.length > 0 && <ProductSlideshow images={images} />}
                 <h3>{product.name}</h3>
@@ -111,7 +114,11 @@ const Products = () => {
                 </p>
                 <p className="product-description">{product.description}</p>
                 <span className="price">{product.price}</span>
+                
+                  
+                
               </div>
+              </Link>
             );
           })
         ) : (
