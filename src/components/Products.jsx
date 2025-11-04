@@ -10,6 +10,16 @@ const Products = () => {
   const itemsPerPage = 8;
   const location = useLocation(); // ✅ Access URL query params
 
+useEffect(() => {
+  const page = document.querySelector(".products-page");
+  if (page) {
+    page.classList.remove("animate-in"); // reset first
+    void page.offsetWidth; // force reflow to restart animation
+    page.classList.add("animate-in");
+  }
+}, [selectedCategory, currentPage]); // re-run on page/category change
+
+
   useEffect(() => {
     fetch("/data/products.json")
       .then((response) => {

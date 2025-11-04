@@ -265,3 +265,26 @@
   }
 
 }
+
+/* ✨ Whole section slide-in from left animation */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Default state before animation */
+.products-page {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+/* When visible (we’ll add .animate-in from React) */
+.products-page.animate-in {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+}

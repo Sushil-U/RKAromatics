@@ -14,10 +14,16 @@ const categories = [
 const Categories = () => {
   const navigate = useNavigate();
 
-  const handleCategoryClick = (categoryName) => {
-    // ✅ Navigate to Products page with selected category
-    navigate(`/products?category=${encodeURIComponent(categoryName)}`);
-  };
+ const handleCategoryClick = (categoryName) => {
+  // Navigate first
+  navigate(`/products?category=${encodeURIComponent(categoryName)}`);
+
+  // ✅ Then scroll to top smoothly
+  setTimeout(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, 100); // small delay lets the new page mount first
+};
+
 
   return (
     <div className="categories-container">
