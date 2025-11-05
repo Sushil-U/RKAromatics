@@ -108,3 +108,25 @@
     font-size: 1.4rem;
   }
 }
+/* ✨ Left-to-right entrance animation */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Default (hidden before animation starts) */
+.product-details-page {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+/* Triggered when component mounts */
+.product-details-page.animate-in {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+}

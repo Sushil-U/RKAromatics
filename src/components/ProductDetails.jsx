@@ -6,6 +6,7 @@ import ProductSlideshow from "./ProductSlideshow";
 const ProductDetails = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
+  const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     fetch("/data/products.json")
@@ -16,6 +17,13 @@ const ProductDetails = () => {
       })
       .catch((err) => console.error("Error loading product:", err));
   }, [id]);
+
+  // ✅ Trigger animation *after* product loads
+  useEffect(() => {
+    if (product) {
+      setTimeout(() => setAnimate(true), 50);
+    }
+  }, [product]);
 
   if (!product) {
     return <div className="loading">Loading product details...</div>;
@@ -28,7 +36,7 @@ const ProductDetails = () => {
     .filter(Boolean);
 
   return (
-    <div className="product-details-page">
+    <div className={`product-details-page ${animate ? "animate-in" : ""}`}>
       <div className="details-container">
         <div className="details-left">
           {images.length > 0 && <ProductSlideshow images={images} />}
